@@ -28,5 +28,13 @@ class ToyCar {
     `;
   }
 }
+document.getElementById('showCarBtn').addEventListener('click', function () {
+  const car = new ToyCar(
+    "RX-7", "Jada Toys", "1:32", "Red", 9.99, "Sports", 240, "Rotary", 276, 1997, "Fast & Furious"
+  );
 
-
+  document.getElementById('carDetails').innerHTML = car.getDescription();
+  document.getElementById('carImage').innerHTML = `
+    <img src="ffToyCar-removebg-preview.png" alt="Mazda RX-7 Toy Car" />
+  `;
+});
