@@ -30,11 +30,11 @@ class ToyCar {
 }
 document.getElementById('showCarBtn').addEventListener('click', function () {
   const car = new ToyCar(
-    "RX-7", "Jada Toys", "1:32", "Red", 9.99, "Sports", 240, "Rotary", 276, 1997, "Fast & Furious"
+    "RX-7", "Jada Toys", "1:32", "Orange", 9.99, "Sports", 240, "Rotary", 276, 1997, "Fast & Furious"
   );
-
+//// Image source: ModelToyCars.com - https://modeltoycars.com/hans-mazda-rx-7-fast-furious-jada-toys-30736-1-32-scale-diecast-model-toy-car/?searchid=979364&search_query=+Fast+%26+Furious
   document.getElementById('carDetails').innerHTML = car.getDescription();
   document.getElementById('carImage').innerHTML = `
-    <img src="ffToyCar-removebg-preview.png" alt="Mazda RX-7 Toy Car" />
+    <img src="rx7newpic.png" alt="Mazda RX-7 Toy Car" />  
   `;
 });
