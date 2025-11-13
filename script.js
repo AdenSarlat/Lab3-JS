@@ -12,5 +12,21 @@ class ToyCar {
     this.launchYear = launchYear;
     this.movieAppearance = movieAppearance;
   }
+
+  getDescription() {
+    return `
+      <h2>${this.brand} ${this.model}</h2>
+      <p><strong>Scale:</strong> ${this.scale}</p>
+      <p><strong>Color:</strong> ${this.color}</p>
+      <p><strong>Price:</strong> $${this.price}</p>
+      <p><strong>Type:</strong> ${this.carType}</p>
+      <p><strong>Top Speed:</strong> ${this.topSpeed} km/h</p>
+      <p><strong>Engine:</strong> ${this.engine}</p>
+      <p><strong>Horsepower:</strong> ${this.horsepower} HP</p>
+      <p><strong>Launch Year:</strong> ${this.launchYear}</p>
+      <p><strong>Movie Appearance:</strong> ${this.movieAppearance}</p>
+    `;
+  }
 }
+
 
