@@ -1,4 +1,4 @@
-class ToyCar {
+class ToyCar { // Builds a toy car object with 11 properties
   constructor(model, brand, scale, color, price, carType, topSpeed, engine, horsepower, launchYear, movieAppearance) {
     this.model = model;
     this.brand = brand;
@@ -13,7 +13,7 @@ class ToyCar {
     this.movieAppearance = movieAppearance;
   }
 
-  getDescription() {
+  getDescription() { // Converting car data into a layout
     return `
       <h2>${this.brand} ${this.model}</h2>
       <p><strong>Scale:</strong> ${this.scale}</p>
@@ -27,7 +27,7 @@ class ToyCar {
       <p><strong>Movie Appearance:</strong> ${this.movieAppearance}</p>
     `;
   }
-}
+} // Waits for the button click to show off the car details
 document.getElementById('showCarBtn').addEventListener('click', function () {
   const car = new ToyCar(
     "RX-7", "Jada Toys", "1:32", "Orange", 9.99, "Sports", 240, "Rotary", 276, 1997, "Fast & Furious"

@@ -1,6 +1,5 @@
-:root {
-  --bg-color: #121212;           
-  --card-bg: #1f1f1f;            
+:root { /* === Theme of Matte black and orange === */
+  --bg-color: #121212;                     
   --text-color: #f5f5f5;         
   --accent-color: #ff6f00;      
   --button-bg: #2a2a2a;          
@@ -18,19 +17,16 @@ body {
 }
 
 h1 {
-  color: var(--accent-color);
+  color: var(--accent-color); /* === Header Styling for the orange === */
   margin-bottom: 20px;
 }
 
-button {
+button { /* === Button Styling white text and dark base === */
   padding: 10px 20px;
   font-size: 16px;
   background-color: var(--button-bg);
   color: var(--button-text);
-  border: none;
   border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
 button:hover {
